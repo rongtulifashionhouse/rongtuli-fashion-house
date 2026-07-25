@@ -22,3 +22,27 @@ if (searchInput) {
         console.log("Search:", this.value);
     });
 }
+// ===== Step 7 : Order Modal =====
+
+const orderModal = document.getElementById("orderModal");
+const orderButtons = document.querySelectorAll(".order-btn");
+const closeButton = document.querySelector(".close-btn");
+
+orderButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        orderModal.style.display = "flex";
+    });
+});
+
+if (closeButton) {
+    closeButton.addEventListener("click", () => {
+        orderModal.style.display = "none";
+    });
+}
+
+// বাইরে ক্লিক করলে বন্ধ হবে
+window.addEventListener("click", (e) => {
+    if (e.target === orderModal) {
+        orderModal.style.display = "none";
+    }
+});
