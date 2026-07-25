@@ -1,7 +1,4 @@
-/* ===========================
-   Rongtuli Fashion House
-   Premium Theme - Part 1
-=========================== */
+/* ===== Rongtuli Fashion House ===== */
 
 *{
     margin:0;
@@ -10,24 +7,23 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
-    background:#f8f8f8;
+    font-family:Arial,sans-serif;
+    background:#f7f7f7;
     color:#222;
 }
 
 /* Header */
 
 .rt-header{
+    position:sticky;
+    top:0;
+    background:#111;
+    color:#fff;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:10px;
     padding:12px;
-    background:#111;
-    color:#fff;
-    position:sticky;
-    top:0;
-    z-index:1000;
+    gap:12px;
 }
 
 .menu-btn{
@@ -35,37 +31,35 @@ body{
     border:none;
     color:#fff;
     font-size:28px;
-    cursor:pointer;
 }
 
-.logo-box img{
+.brand{
+    display:flex;
+    align-items:center;
+    flex:1;
+}
+
+.logo{
     width:55px;
     height:55px;
     border-radius:50%;
     object-fit:cover;
+    margin-right:10px;
     border:2px solid #d4af37;
 }
 
-.brand-box{
-    flex:1;
-    padding-left:8px;
-}
-
-.brand-box h1{
+.brand-text h1{
     font-size:20px;
     color:#d4af37;
 }
 
-.brand-box p{
+.brand-text p{
     font-size:12px;
     color:#ddd;
 }
 
-/* Search */
-
 .search-box{
     display:flex;
-    align-items:center;
     background:#fff;
     border-radius:30px;
     overflow:hidden;
@@ -74,7 +68,7 @@ body{
 .search-box input{
     border:none;
     outline:none;
-    padding:8px 12px;
+    padding:8px 10px;
     width:120px;
 }
 
@@ -82,63 +76,47 @@ body{
     border:none;
     background:#d4af37;
     padding:8px 12px;
-    cursor:pointer;
 }
 
 /* Banner */
 
-.top-banner{
+.hero-banner img{
     width:100%;
-    overflow:hidden;
-}
-
-.top-banner img{
-    width:100%;
-    height:180px;
+    height:170px;
     object-fit:cover;
     display:block;
 }
 
-/* Category */
+/* Quick Menu */
 
-.category-bar{
+.quick-menu,
+.category-scroll{
     display:flex;
-    overflow-x:auto;
     gap:10px;
+    overflow-x:auto;
     padding:12px;
     background:#fff;
 }
 
-.category-bar::-webkit-scrollbar{
-    display:none;
-}
-
-.category-bar button{
+.quick-menu button,
+.category-scroll button{
     border:none;
     background:#111;
     color:#fff;
     padding:10px 18px;
     border-radius:25px;
     white-space:nowrap;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.category-bar button:hover{
-    background:#d4af37;
-    color:#111;
 }
 
 /* Product */
 
-.product-section{
+.products{
     padding:20px;
 }
 
-.product-section h2{
+.products h2{
     text-align:center;
     margin-bottom:20px;
-    color:#111;
 }
 
 .product-grid{
@@ -146,111 +124,3 @@ body{
     grid-template-columns:repeat(2,1fr);
     gap:15px;
 }
-
-/* Mobile */
-
-@media(max-width:600px){
-
-.brand-box h1{
-    font-size:18px;
-}
-
-.search-box input{
-    width:90px;
-}
-
-.top-banner img{
-    height:150px;
-}
-
-}
-/* ===========================
-   Product Card
-=========================== */
-
-.product-card{
-    background:#fff;
-    border-radius:16px;
-    overflow:hidden;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:.3s;
-    position:relative;
-}
-
-.product-card:hover{
-    transform:translateY(-6px);
-}
-
-.product-card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.discount-badge{
-    position:absolute;
-    top:10px;
-    left:10px;
-    background:#e53935;
-    color:#fff;
-    padding:6px 10px;
-    border-radius:20px;
-    font-size:12px;
-    font-weight:bold;
-}
-
-.product-info{
-    padding:15px;
-}
-
-.product-name{
-    font-size:18px;
-    font-weight:bold;
-    margin-bottom:8px;
-}
-
-.product-price{
-    color:#d4af37;
-    font-size:20px;
-    font-weight:bold;
-    margin-bottom:10px;
-}
-
-.old-price{
-    color:#999;
-    text-decoration:line-through;
-    font-size:14px;
-    margin-left:8px;
-}
-
-.order-btn{
-    width:100%;
-    border:none;
-    background:#111;
-    color:#fff;
-    padding:12px;
-    border-radius:10px;
-    font-size:16px;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.order-btn:hover{
-    background:#d4af37;
-    color:#111;
-}
-
-/* Premium Strip */
-
-.premium-strip{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    padding:15px;
-    background:#111;
-}
-
-.premium-strip span{
-    color:#d4af37;
-    font-weight:bold;
-       }
