@@ -307,3 +307,23 @@ body{
     float:right;
     cursor:pointer;
 }
+/* ===== Product Options ===== */
+
+.product-options{
+    margin:12px 0;
+}
+
+.product-options label{
+    display:block;
+    margin-bottom:5px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.product-options select{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
