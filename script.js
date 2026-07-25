@@ -174,3 +174,10 @@ filterButtons.forEach(button => {
     });
 
 });
+// ===== Product Gallery =====
+
+function changeImage(id, image){
+
+    document.getElementById(id).src = image;
+
+}
