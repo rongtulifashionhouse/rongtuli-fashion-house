@@ -46,43 +46,38 @@ window.addEventListener("click", (e) => {
         orderModal.style.display = "none";
     }
 });
-// ===== Step 8A =====
-
-const confirmBtn = document.querySelector(".confirm-btn");
-const orderSuccess = document.getElementById("orderSuccess");
-const orderId = document.getElementById("orderId");
-const whatsappBtn = document.getElementById("whatsappBtn");
-
-if (confirmBtn) {
-
-    confirmBtn.addEventListener("click", () => {
-
-        const id = "RT-" + Date.now();
-
-        orderId.textContent = id;
-
-        orderSuccess.style.display = "block";
-
-    });
-
-}
-
 if (whatsappBtn) {
 
     whatsappBtn.addEventListener("click", () => {
 
+        const name = document.querySelector('input[type="text"]').value;
+        const phone = document.querySelector('input[type="tel"]').value;
+        const size = document.querySelector("select").value;
+        const quantity = document.querySelector('input[type="number"]').value;
+
+        const division = document.getElementById("division").value;
+        const district = document.getElementById("district").value;
+        const address = document.getElementById("address").value;
+
         const message =
-`রঙতুলি ফ্যাশন হাউজ
+`🛍️ রঙতুলি ফ্যাশন হাউজ
 
 Order ID: ${orderId.textContent}
 
-আমি আমার অর্ডার নিশ্চিত করতে চাই।`;
+নাম: ${name}
+মোবাইল: ${phone}
+সাইজ: ${size}
+পরিমাণ: ${quantity}
+
+বিভাগ: ${division}
+জেলা: ${district}
+ঠিকানা: ${address}`;
 
         window.open(
-"https://wa.me/8801988508824?text=" +
-encodeURIComponent(message),
-"_blank"
-);
+            "https://wa.me/8801988508824?text=" +
+            encodeURIComponent(message),
+            "_blank"
+        );
 
     });
 
