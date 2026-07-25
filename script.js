@@ -152,22 +152,21 @@ if(closeMenu){
 const filterButtons = document.querySelectorAll(".filter-btn");
 const products = document.querySelectorAll(".product-card");
 
-filterButtons.forEach(button=>{
+filterButtons.forEach(button => {
 
-    button.addEventListener("click",()=>{
+    button.addEventListener("click", () => {
 
         const filter = button.dataset.filter;
 
-        products.forEach(product=>{
+        products.forEach(product => {
 
-            if(product.dataset.category===filter){
-
-                product.style.display="block";
-
-            }else{
-
-                product.style.display="none";
-
+            if (
+                filter === "all" ||
+                product.dataset.category === filter
+            ) {
+                product.style.display = "block";
+            } else {
+                product.style.display = "none";
             }
 
         });
