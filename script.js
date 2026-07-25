@@ -117,3 +117,16 @@ if (division) {
     });
 
 }
+// ===== Admin Panel =====
+
+const addProductBtn = document.getElementById("addProductBtn");
+
+if(addProductBtn){
+
+    addProductBtn.addEventListener("click",()=>{
+
+        alert("পরবর্তী ধাপে নতুন পণ্য যোগ করার সিস্টেম যুক্ত করা হবে।");
+
+    });
+
+}
