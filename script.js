@@ -147,3 +147,31 @@ if(closeMenu){
         sidebar.classList.remove("active");
     });
 }
+// ===== Product Filter =====
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const products = document.querySelectorAll(".product-card");
+
+filterButtons.forEach(button=>{
+
+    button.addEventListener("click",()=>{
+
+        const filter = button.dataset.filter;
+
+        products.forEach(product=>{
+
+            if(product.dataset.category===filter){
+
+                product.style.display="block";
+
+            }else{
+
+                product.style.display="none";
+
+            }
+
+        });
+
+    });
+
+});
