@@ -87,3 +87,38 @@ encodeURIComponent(message),
     });
 
 }
+// ===== Step 8B =====
+
+const districtData = {
+    "ঢাকা":["ঢাকা","গাজীপুর","নারায়ণগঞ্জ","মানিকগঞ্জ"],
+    "চট্টগ্রাম":["চট্টগ্রাম","কক্সবাজার","কুমিল্লা","ফেনী"],
+    "রাজশাহী":["রাজশাহী","বগুড়া","পাবনা"],
+    "খুলনা":["খুলনা","যশোর","সাতক্ষীরা"],
+    "বরিশাল":["বরিশাল","ভোলা","পটুয়াখালী"],
+    "সিলেট":["সিলেট","মৌলভীবাজার","হবিগঞ্জ"],
+    "রংপুর":["রংপুর","দিনাজপুর","কুড়িগ্রাম"],
+    "ময়মনসিংহ":["ময়মনসিংহ","জামালপুর","নেত্রকোনা"]
+};
+
+const division = document.getElementById("division");
+const district = document.getElementById("district");
+
+if (division) {
+
+    division.addEventListener("change", function(){
+
+        district.innerHTML =
+        '<option value="">জেলা নির্বাচন করুন</option>';
+
+        const list = districtData[this.value] || [];
+
+        list.forEach(item=>{
+
+            district.innerHTML +=
+            `<option>${item}</option>`;
+
+        });
+
+    });
+
+}
