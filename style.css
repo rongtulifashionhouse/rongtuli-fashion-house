@@ -189,3 +189,22 @@ body{
     color:#fff;
     cursor:pointer;
 }
+#orderSuccess{
+    text-align:center;
+}
+
+#orderSuccess p{
+    margin:8px 0;
+}
+
+#whatsappBtn{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#25D366;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:10px;
+}
