@@ -197,7 +197,27 @@
 
 <div class="product-card">
 
-    <img src="images/products/polo1.jpg" alt="প্রিমিয়াম পলো">
+<div class="product-gallery">
+
+    <img id="mainImage1"
+         src="images/products/tshirt1.jpg"
+         alt="প্রিমিয়াম টি-শার্ট"
+         class="main-image">
+
+    <div class="thumbs">
+
+        <img src="images/products/tshirt1.jpg"
+             onclick="changeImage('mainImage1', this.src)">
+
+        <img src="images/products/tshirt2.jpg"
+             onclick="changeImage('mainImage1', this.src)">
+
+        <img src="images/products/tshirt3.jpg"
+             onclick="changeImage('mainImage1', this.src)">
+
+    </div>
+
+</div>
 
     <div class="product-info">
 
