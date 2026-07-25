@@ -46,3 +46,44 @@ window.addEventListener("click", (e) => {
         orderModal.style.display = "none";
     }
 });
+// ===== Step 8A =====
+
+const confirmBtn = document.querySelector(".confirm-btn");
+const orderSuccess = document.getElementById("orderSuccess");
+const orderId = document.getElementById("orderId");
+const whatsappBtn = document.getElementById("whatsappBtn");
+
+if (confirmBtn) {
+
+    confirmBtn.addEventListener("click", () => {
+
+        const id = "RT-" + Date.now();
+
+        orderId.textContent = id;
+
+        orderSuccess.style.display = "block";
+
+    });
+
+}
+
+if (whatsappBtn) {
+
+    whatsappBtn.addEventListener("click", () => {
+
+        const message =
+`রঙতুলি ফ্যাশন হাউজ
+
+Order ID: ${orderId.textContent}
+
+আমি আমার অর্ডার নিশ্চিত করতে চাই।`;
+
+        window.open(
+"https://wa.me/8801988508824?text=" +
+encodeURIComponent(message),
+"_blank"
+);
+
+    });
+
+}
