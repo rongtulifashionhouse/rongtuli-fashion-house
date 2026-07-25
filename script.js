@@ -130,3 +130,20 @@ if(addProductBtn){
     });
 
 }
+// ===== Sidebar =====
+
+const sidebar = document.getElementById("sidebar");
+const openMenu = document.querySelector(".menu-btn");
+const closeMenu = document.querySelector(".close-menu");
+
+if(openMenu){
+    openMenu.addEventListener("click",()=>{
+        sidebar.classList.add("active");
+    });
+}
+
+if(closeMenu){
+    closeMenu.addEventListener("click",()=>{
+        sidebar.classList.remove("active");
+    });
+}
