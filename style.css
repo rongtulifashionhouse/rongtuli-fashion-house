@@ -164,3 +164,93 @@ body{
 }
 
 }
+/* ===========================
+   Product Card
+=========================== */
+
+.product-card{
+    background:#fff;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    position:relative;
+}
+
+.product-card:hover{
+    transform:translateY(-6px);
+}
+
+.product-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.discount-badge{
+    position:absolute;
+    top:10px;
+    left:10px;
+    background:#e53935;
+    color:#fff;
+    padding:6px 10px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.product-info{
+    padding:15px;
+}
+
+.product-name{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.product-price{
+    color:#d4af37;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.old-price{
+    color:#999;
+    text-decoration:line-through;
+    font-size:14px;
+    margin-left:8px;
+}
+
+.order-btn{
+    width:100%;
+    border:none;
+    background:#111;
+    color:#fff;
+    padding:12px;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.order-btn:hover{
+    background:#d4af37;
+    color:#111;
+}
+
+/* Premium Strip */
+
+.premium-strip{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    padding:15px;
+    background:#111;
+}
+
+.premium-strip span{
+    color:#d4af37;
+    font-weight:bold;
+       }
