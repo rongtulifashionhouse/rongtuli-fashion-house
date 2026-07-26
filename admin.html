@@ -2,22 +2,19 @@
 <html lang="bn">
 
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>রঙতুলি ফ্যাশন হাউজ | Admin Panel</title>
 
 <link rel="stylesheet" href="admin.css">
-
 <script src="admin.js" defer></script>
 
 </head>
 
 <body>
 
-<div class="login-box">
+<div class="login-box" id="loginBox">
 
 <h1>রঙতুলি ফ্যাশন হাউজ</h1>
 
@@ -26,7 +23,7 @@
 <input
 type="text"
 id="username"
-placeholder="Admin Username">
+placeholder="Username">
 
 <input
 type="password"
@@ -40,6 +37,24 @@ Login
 </button>
 
 <p id="loginMessage"></p>
+
+</div>
+
+<div id="dashboard" style="display:none;">
+
+<h1>রঙতুলি ফ্যাশন হাউজ</h1>
+
+<h2>Admin Dashboard</h2>
+
+<button>➕ নতুন পণ্য যোগ করুন</button>
+
+<button>📦 সকল পণ্য</button>
+
+<button>🛒 অর্ডার</button>
+
+<button>👥 গ্রাহক</button>
+
+<button>🚪 Logout</button>
 
 </div>
 
