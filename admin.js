@@ -145,3 +145,14 @@ button.parentElement.remove();
 }
 
 }
+// ===== Image Preview =====
+
+function previewImage(event){
+
+const img=document.getElementById("imagePreview");
+
+img.src=URL.createObjectURL(event.target.files[0]);
+
+img.style.display="block";
+
+}
