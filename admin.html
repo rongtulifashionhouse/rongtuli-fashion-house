@@ -17,25 +17,39 @@
 
 <body>
 
+<!-- Login -->
+
 <div class="login-box" id="loginBox">
 
 <h1>রঙতুলি ফ্যাশন হাউজ</h1>
 
 <h2>Admin Login</h2>
 
-<input type="text" id="username" placeholder="Username">
+<input type="text"
+id="username"
+placeholder="Username">
 
-<input type="password" id="password" placeholder="Password">
+<input type="password"
+id="password"
+placeholder="Password">
 
-<button onclick="loginAdmin()">Login</button>
+<button onclick="loginAdmin()">
+
+Login
+
+</button>
 
 <p id="loginMessage"></p>
 
 </div>
 
+<!-- Dashboard -->
+
 <div id="dashboard" style="display:none;">
 
-<h1>Admin Dashboard</h1>
+<h1>রঙতুলি ফ্যাশন হাউজ</h1>
+
+<h2>Admin Dashboard</h2>
 
 <button onclick="showProductForm()">
 
@@ -43,13 +57,100 @@
 
 </button>
 
+<button>
+
+📦 সকল পণ্য
+
+</button>
+
+<button>
+
+🛒 অর্ডার তালিকা
+
+</button>
+
+<button>
+
+👥 গ্রাহক
+
+</button>
+
+<button onclick="logoutAdmin()">
+
+🚪 Logout
+
+</button>
+
+<!-- Product Form -->
+
 <div id="productForm" style="display:none;">
 
-<h2>নতুন পণ্য</h2>
+<h2>নতুন পণ্য যোগ করুন</h2>
 
-<input id="productName" type="text" placeholder="পণ্যের নাম">
+<input
+type="text"
+id="productName"
+placeholder="পণ্যের নাম">
 
-<input id="productPrice" type="number" placeholder="দাম">
+<select id="productCategory">
+
+<option value="">ক্যাটাগরি নির্বাচন করুন</option>
+
+<option>শার্ট</option>
+
+<option>টি-শার্ট</option>
+
+<option>পলো</option>
+
+<option>পাঞ্জাবি</option>
+
+<option>জিন্স</option>
+
+<option>প্যান্ট</option>
+
+</select>
+
+<input
+type="number"
+id="productPrice"
+placeholder="মূল দাম">
+
+<input
+type="number"
+id="productDiscount"
+placeholder="ডিসকাউন্ট (%)">
+
+<input
+type="text"
+id="productColor"
+placeholder="রঙ (কমা দিয়ে একাধিক লিখুন)">
+
+<input
+type="text"
+id="productSize"
+placeholder="সাইজ (S,M,L,XL,XXL)">
+
+<select id="productStock">
+
+<option>In Stock</option>
+
+<option>Out of Stock</option>
+
+</select>
+
+<select id="productRating">
+
+<option>⭐ 5</option>
+
+<option>⭐ 4</option>
+
+<option>⭐ 3</option>
+
+<option>⭐ 2</option>
+
+<option>⭐ 1</option>
+
+</select>
 
 <input
 type="file"
@@ -61,6 +162,12 @@ onchange="previewImage(event)">
 id="imagePreview"
 style="display:none;width:180px;border-radius:10px;margin:15px 0;">
 
+<textarea
+id="productDescription"
+placeholder="পণ্যের সম্পূর্ণ বিবরণ">
+
+</textarea>
+
 <button onclick="saveProduct()">
 
 💾 Save Product
@@ -69,18 +176,18 @@ style="display:none;width:180px;border-radius:10px;margin:15px 0;">
 
 </div>
 
-<h2>📦 Product List</h2>
+<h2>
 
-<div id="productList"></div>
+📦 Product List
 
-<button onclick="logoutAdmin()">
+</h2>
 
-Logout
+<div id="productList">
 
-</button>
+</div>
 
 </div>
 
 </body>
 
-</html>
+  </html>
