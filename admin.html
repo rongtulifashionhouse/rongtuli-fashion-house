@@ -39,9 +39,7 @@ Login
 
 <div id="dashboard" style="display:none;">
 
-<h1>রঙতুলি ফ্যাশন হাউজ</h1>
-
-<h2>Admin Dashboard</h2>
+<h1>Admin Dashboard</h1>
 
 <button onclick="showProductForm()">
 
@@ -49,61 +47,33 @@ Login
 
 </button>
 
-<button>
-
-📦 সকল পণ্য
-
-</button>
-
-<button>
-
-🛒 অর্ডার
-
-</button>
-
-<button>
-
-👥 গ্রাহক
-
-</button>
-
-<button onclick="logoutAdmin()">
-
-🚪 Logout
-
-</button>
-
 <div id="productForm" style="display:none;">
 
-<h2>নতুন পণ্য যোগ করুন</h2>
+<h2>নতুন পণ্য</h2>
 
-<input type="text" placeholder="পণ্যের নাম">
+<input id="productName" type="text" placeholder="পণ্যের নাম">
 
-<input type="number" placeholder="দাম">
+<input id="productPrice" type="number" placeholder="দাম">
 
-<input type="text" placeholder="রঙ">
-
-<input type="text" placeholder="সাইজ">
-
-<select>
-
-<option>In Stock</option>
-
-<option>Out of Stock</option>
-
-</select>
-
-<input type="file">
-
-<textarea placeholder="পণ্যের বিবরণ"></textarea>
-
-<button>
+<button onclick="saveProduct()">
 
 💾 Save Product
 
 </button>
 
 </div>
+
+<h2>📦 Product List</h2>
+
+<div id="productList">
+
+</div>
+
+<button onclick="logoutAdmin()">
+
+Logout
+
+</button>
 
 </div>
 
