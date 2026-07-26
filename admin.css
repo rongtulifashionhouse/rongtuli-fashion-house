@@ -1,1 +1,57 @@
+/* ===== Admin Login Design ===== */
 
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+}
+
+.login-box{
+    max-width:400px;
+    margin:80px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.login-box h1{
+    text-align:center;
+    color:#d4af37;
+    margin-bottom:10px;
+}
+
+.login-box h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.login-box input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
+    box-sizing:border-box;
+}
+
+.login-box button{
+    width:100%;
+    padding:12px;
+    background:#111;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.login-box button:hover{
+    background:#333;
+}
+
+#loginMessage{
+    text-align:center;
+    margin-top:15px;
+    color:red;
+}
