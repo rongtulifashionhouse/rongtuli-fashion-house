@@ -208,3 +208,10 @@ document.querySelectorAll(".product-card").forEach(card => {
     card.appendChild(stock);
 
 });
+// ===== Product ID =====
+
+document.querySelectorAll(".product-card").forEach(card=>{
+
+    console.log("Product ID:",card.dataset.id);
+
+});
