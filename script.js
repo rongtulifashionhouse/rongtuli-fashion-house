@@ -195,3 +195,16 @@ document.querySelectorAll(".wishlist-btn").forEach(btn => {
     });
 
 });
+// ===== Stock Status =====
+
+document.querySelectorAll(".product-card").forEach(card => {
+
+    const stock = document.createElement("span");
+
+    stock.className = "stock-badge";
+
+    stock.textContent = "✅ In Stock";
+
+    card.appendChild(stock);
+
+});
