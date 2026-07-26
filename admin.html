@@ -27,11 +27,7 @@
 
 <input type="password" id="password" placeholder="Password">
 
-<button onclick="loginAdmin()">
-
-Login
-
-</button>
+<button onclick="loginAdmin()">Login</button>
 
 <p id="loginMessage"></p>
 
@@ -55,6 +51,16 @@ Login
 
 <input id="productPrice" type="number" placeholder="দাম">
 
+<input
+type="file"
+id="productImage"
+accept="image/*"
+onchange="previewImage(event)">
+
+<img
+id="imagePreview"
+style="display:none;width:180px;border-radius:10px;margin:15px 0;">
+
 <button onclick="saveProduct()">
 
 💾 Save Product
@@ -65,9 +71,7 @@ Login
 
 <h2>📦 Product List</h2>
 
-<div id="productList">
-
-</div>
+<div id="productList"></div>
 
 <button onclick="logoutAdmin()">
 
