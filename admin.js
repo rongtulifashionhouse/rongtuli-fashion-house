@@ -20,3 +20,24 @@ function loginAdmin(){
     }
 
 }
+// ===== Dashboard Login =====
+
+function loginAdmin(){
+
+const user=document.getElementById("username").value;
+
+const pass=document.getElementById("password").value;
+
+if(user==="admin" && pass==="123456"){
+
+document.getElementById("loginBox").style.display="none";
+
+document.getElementById("dashboard").style.display="block";
+
+}else{
+
+document.getElementById("loginMessage").innerHTML="ভুল Username অথবা Password";
+
+}
+
+}
