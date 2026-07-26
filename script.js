@@ -181,3 +181,17 @@ function changeImage(id, image){
     document.getElementById(id).src = image;
 
 }
+// ===== Wishlist =====
+
+document.querySelectorAll(".wishlist-btn").forEach(btn => {
+
+    btn.addEventListener("click", () => {
+
+        btn.classList.toggle("active");
+
+        btn.textContent =
+            btn.classList.contains("active") ? "♥" : "♡";
+
+    });
+
+});
