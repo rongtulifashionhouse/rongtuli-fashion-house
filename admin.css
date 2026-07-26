@@ -121,3 +121,24 @@ height:120px;
 resize:vertical;
 
 }
+/* ===== Product List ===== */
+
+#productList{
+
+margin-top:20px;
+
+}
+
+.product-item{
+
+padding:15px;
+
+margin:10px 0;
+
+border-radius:10px;
+
+background:#f7f7f7;
+
+border:1px solid #ddd;
+
+}
