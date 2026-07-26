@@ -77,12 +77,29 @@ const item=document.createElement("div");
 item.className="product-item";
 
 item.innerHTML=`
+item.innerHTML=`
 
 <b>${name}</b>
 
 <br>
 
-৳ ${price}
+<span>৳ ${price}</span>
+
+<br>
+
+<button class="edit-btn"
+onclick="editProduct(this)">
+
+✏️ Edit
+
+</button>
+
+<button class="delete-btn"
+onclick="deleteProduct(this)">
+
+🗑️ Delete
+
+</button>
 
 `;
 
