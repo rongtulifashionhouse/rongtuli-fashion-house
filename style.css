@@ -380,3 +380,13 @@ body{
     background:#ff3b5c;
     color:#fff;
 }
+.stock-badge{
+    display:inline-block;
+    margin-top:10px;
+    padding:6px 12px;
+    background:#28a745;
+    color:#fff;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+}
