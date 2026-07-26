@@ -41,3 +41,18 @@ document.getElementById("loginMessage").innerHTML="ভুল Username অথব�
 }
 
 }
+// ===== Product Form =====
+
+function showProductForm(){
+
+document.getElementById("productForm").style.display="block";
+
+}
+
+function logoutAdmin(){
+
+document.getElementById("dashboard").style.display="none";
+
+document.getElementById("loginBox").style.display="block";
+
+}
