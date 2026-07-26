@@ -2,12 +2,15 @@
 <html lang="bn">
 
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>রঙতুলি ফ্যাশন হাউজ | Admin Panel</title>
 
 <link rel="stylesheet" href="admin.css">
+
 <script src="admin.js" defer></script>
 
 </head>
@@ -20,15 +23,9 @@
 
 <h2>Admin Login</h2>
 
-<input
-type="text"
-id="username"
-placeholder="Username">
+<input type="text" id="username" placeholder="Username">
 
-<input
-type="password"
-id="password"
-placeholder="Password">
+<input type="password" id="password" placeholder="Password">
 
 <button onclick="loginAdmin()">
 
@@ -46,15 +43,67 @@ Login
 
 <h2>Admin Dashboard</h2>
 
-<button>➕ নতুন পণ্য যোগ করুন</button>
+<button onclick="showProductForm()">
 
-<button>📦 সকল পণ্য</button>
+➕ নতুন পণ্য যোগ করুন
 
-<button>🛒 অর্ডার</button>
+</button>
 
-<button>👥 গ্রাহক</button>
+<button>
 
-<button>🚪 Logout</button>
+📦 সকল পণ্য
+
+</button>
+
+<button>
+
+🛒 অর্ডার
+
+</button>
+
+<button>
+
+👥 গ্রাহক
+
+</button>
+
+<button onclick="logoutAdmin()">
+
+🚪 Logout
+
+</button>
+
+<div id="productForm" style="display:none;">
+
+<h2>নতুন পণ্য যোগ করুন</h2>
+
+<input type="text" placeholder="পণ্যের নাম">
+
+<input type="number" placeholder="দাম">
+
+<input type="text" placeholder="রঙ">
+
+<input type="text" placeholder="সাইজ">
+
+<select>
+
+<option>In Stock</option>
+
+<option>Out of Stock</option>
+
+</select>
+
+<input type="file">
+
+<textarea placeholder="পণ্যের বিবরণ"></textarea>
+
+<button>
+
+💾 Save Product
+
+</button>
+
+</div>
 
 </div>
 
