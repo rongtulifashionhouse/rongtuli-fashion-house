@@ -354,3 +354,29 @@ body{
 .thumbs img:hover{
     border-color:#d4af37;
 } 
+/* ===== Wishlist ===== */
+
+.product-card{
+    position:relative;
+}
+
+.wishlist-btn{
+    position:absolute;
+    top:12px;
+    right:12px;
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    color:#ff3b5c;
+    font-size:22px;
+    cursor:pointer;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+    z-index:5;
+}
+
+.wishlist-btn.active{
+    background:#ff3b5c;
+    color:#fff;
+}
