@@ -95,3 +95,36 @@ document.getElementById("productPrice").value="";
 alert("পণ্য যোগ হয়েছে");
 
 }
+// ===== Edit & Delete =====
+
+function editProduct(button){
+
+const item=button.parentElement;
+
+const title=item.querySelector("b").innerText;
+
+const price=item.querySelector("span").innerText.replace("৳ ","");
+
+const newTitle=prompt("নতুন পণ্যের নাম",title);
+
+if(newTitle===null)return;
+
+const newPrice=prompt("নতুন দাম",price);
+
+if(newPrice===null)return;
+
+item.querySelector("b").innerText=newTitle;
+
+item.querySelector("span").innerText="৳ "+newPrice;
+
+}
+
+function deleteProduct(button){
+
+if(confirm("আপনি কি এই পণ্যটি মুছে ফেলতে চান?")){
+
+button.parentElement.remove();
+
+}
+
+}
