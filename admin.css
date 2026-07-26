@@ -177,3 +177,14 @@ background:#dc3545;
 color:#fff;
 
     }
+/* ===== Image Preview ===== */
+
+#imagePreview{
+
+border:2px solid #ddd;
+
+padding:5px;
+
+object-fit:cover;
+
+}
