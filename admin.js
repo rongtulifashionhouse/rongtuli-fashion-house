@@ -56,3 +56,42 @@ document.getElementById("dashboard").style.display="none";
 document.getElementById("loginBox").style.display="block";
 
 }
+// ===== Product Save =====
+
+function saveProduct(){
+
+const name=document.getElementById("productName").value;
+
+const price=document.getElementById("productPrice").value;
+
+if(name===""||price===""){
+
+alert("সব তথ্য দিন");
+
+return;
+
+}
+
+const item=document.createElement("div");
+
+item.className="product-item";
+
+item.innerHTML=`
+
+<b>${name}</b>
+
+<br>
+
+৳ ${price}
+
+`;
+
+document.getElementById("productList").appendChild(item);
+
+document.getElementById("productName").value="";
+
+document.getElementById("productPrice").value="";
+
+alert("পণ্য যোগ হয়েছে");
+
+}
