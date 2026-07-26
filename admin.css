@@ -142,3 +142,38 @@ background:#f7f7f7;
 border:1px solid #ddd;
 
 }
+/* ===== Product Action Button ===== */
+
+.product-item button{
+
+margin-top:10px;
+
+margin-right:8px;
+
+padding:8px 14px;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-size:14px;
+
+}
+
+.edit-btn{
+
+background:#0d6efd;
+
+color:#fff;
+
+}
+
+.delete-btn{
+
+background:#dc3545;
+
+color:#fff;
+
+    }
