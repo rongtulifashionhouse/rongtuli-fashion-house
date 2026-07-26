@@ -215,3 +215,10 @@ document.querySelectorAll(".product-card").forEach(card=>{
     console.log("Product ID:",card.dataset.id);
 
 });
+// ===== Admin Login =====
+
+function adminLogin(){
+
+    alert("পরবর্তী ধাপে নিরাপদ লগইন সিস্টেম যুক্ত করা হবে।");
+
+}
